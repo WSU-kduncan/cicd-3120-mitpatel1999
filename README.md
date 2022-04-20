@@ -1,41 +1,9 @@
-# cicd-3120-mitpatel1999
-PART 1: 
 
-1. Overview:
-	Make Github repo
-	mkdir website
-	make a html file and put content in
+# Project 5 
 
-2. Install Docker: 
-	sudo apt-get update
-	sudo apt-get remove docker docker-engine docker.io
-	sudo apt install docker.io
-	sudo systemctl start docker
-	sudo systemctl enable docker
 
-   Build Container:
-	vim Dockerfile (FROM ubuntu
-			ENV DEBIAN_FRONTEND=noninteractive
-			RUN apt-get update
-			RUN apt-get install apache2 -y
-			RUN apt-get install apache2-utils -y
-			RUN apt-get clean
-			COPY index.html /var/www/html/
-			EXPOSE 80
-			CMD ["apache2ctl","-D","FOREGROUND"])
 
-	docker build -t="webserver"
-	docker run -d -p 808:80 webserver
-	sudo docker images (See your image)
-   Run: 
-	Type local host ip (127.0.0.1:808)
-	Then you can see your website
-
-# Project 5 Rubric
-
-/ 21
-
-## Repo contents ( / 6)
+## Repo contents 
 
 - `README.md`
 - `website` folder with website pages
@@ -45,7 +13,7 @@ PART 1:
   - container restart script
   - webhook definition file
 
-## docker basics + Dockerfile ( / 5)
+## docker basics + Dockerfile 
 
 - Project Overview
   - Make Github repo
@@ -82,7 +50,7 @@ PART 1:
      - Type local host ip (127.0.0.1:808)
      - Then you can see your website
 
-## GitHub Actions and DockerHub ( / 4)
+## GitHub Actions and DockerHub 
 
 - Create DockerHub public repo
   - Sign into Docker Hub
@@ -99,7 +67,7 @@ PART 1:
   - what does it do and when
   - variables to change (repository, etc.)
 
-## Deployment ( / 4)
+## Deployment 
 
 - Container restart script
   - what it does
@@ -110,7 +78,7 @@ PART 1:
   - How you installed and are running the [webhook on GitHub](https://github.com/adnanh/webhook)
 - Setting up a notifier in GitHub or DockerHub
 
-## Diagramming ( / 2)
+## Diagramming 
 
 - Locigically diagrammed steps for continuous integration workflow
 - Locigically diagrammed steps for continuous deployment workflow
