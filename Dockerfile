@@ -1,7 +1,7 @@
 
 FROM httpd:2.4
-RUN mkdir /var/www/html/index.html
-COPY index.html /var/www/html/index.html
+
+COPY website/index.html /var/www/html/
 
 EXPOSE 80
 
