@@ -54,13 +54,17 @@
   - Fill out the name and description and for Visibility choose Public
   
 - How to authenticate with DockerHub via CLI using Dockhub credentials
-  - what credentials would you recommend providing?
+  - Go to settings 
+  - Click on Security
+  - Click on New Access Token
+  - Provide the information and use the command to sign in and save the token.
 - Configuring GitHub Secrets
-  - what credentials are needed - DockerHub credentials (do not state your credentials)
-  - set secrets and secret names
+  - Go to Github
+  - Go to Settings then Secrets
+  - Create new Secret and name it DOCKER_HUB_USERNAME and provide the Docker ID in the value
+  - Create another Secret and name it DOCKER_HUB_ACCESS_TOKEN and provide the Token in the value
 - Behavior of GitHub workflow
-  - what does it do and when
-  - variables to change (repository, etc.)
+  - Workflow is designed to use your Github and action to build and push your image to Docker Hub when triggered. The .yml file was from a template and I changed things like Secrets and my Docker Hub repostiory name. 
 
 ## Deployment 
 
