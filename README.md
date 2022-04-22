@@ -69,16 +69,23 @@
 ## Deployment 
 
 - Container restart script
-  - what it does
+  - Script that will stop the container, remove containers and update the images and run the container. 
 - Webhook task definition file
-  - what it does
+  - Executes the file and call the script that I made called restart.sh. 
 - Setting up a webhook on the server
-  - How you created you own listener
-  - How you installed and are running the [webhook on GitHub](https://github.com/adnanh/webhook)
+  - Listener: webhook -hooks path/to/webhook-config.json -verbose
+  - Webhook: sudo apt install webhook
+   	     webhook -hooks hooks.json -verbose
 - Setting up a notifier in GitHub or DockerHub
+  - Docker Hub:
+   	- Go to Repo
+     	- Go to Webhook tab
+     	- Add name and URL then click create
 
 ## Diagramming 
 
-- Locigically diagrammed steps for continuous integration workflow
-- Locigically diagrammed steps for continuous deployment workflow
+![Screenshot 2022-04-22 130442](https://user-images.githubusercontent.com/77901596/164761383-ccc854ad-6ce2-464a-ae38-4bd41961527e.png)
+
+
+
 
