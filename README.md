@@ -78,9 +78,9 @@
    	     webhook -hooks hooks.json -verbose
 - Setting up a notifier in GitHub or DockerHub
   - Docker Hub:
-   	- Go to Repo
-     	- Go to Webhook tab
-     	- Add name and URL then click create
+   - Go to Repo
+   - Go to Webhook tab
+   - Add name and URL then click create
 
 ## Diagramming 
 
