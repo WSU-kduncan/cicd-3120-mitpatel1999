@@ -1,5 +1,3 @@
-
-
 name: Docker-Login-Build-Push
 
 on:
@@ -38,5 +36,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_HUB_REPO }}:1.0
+          tags: ${{ secrets.DOCKER_USERNAME }}/${{ env.DOCKER_HUB_REPO }}:latest
 
