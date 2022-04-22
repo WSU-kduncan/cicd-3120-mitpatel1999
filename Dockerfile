@@ -1,6 +1,8 @@
 
 FROM httpd:2.4
 
-COPY /html /usr/local/apache2/htdocs/
 
 EXPOSE 80
+
+CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
+COPY index.html /var/www/html/index.html
