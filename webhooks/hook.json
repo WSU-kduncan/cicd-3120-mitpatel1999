@@ -1,7 +1,7 @@
 [
   {
     "id": "redeploy-webhook",
-    "execute-command": "./pull.sh",
-    "command-working-directory": "./webhook"
+    "execute-command": "./restart.sh",
+    "command-working-directory": "/home/mitpatel/cicd-3120-mitpatel1999/webhook"
   }
 ]
